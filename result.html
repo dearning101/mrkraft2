@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="header-text"><a href=/>Hem </a></h1>
+    </header>
+
+    <!-- Resultatssektion -->
+    <div class="result-container">
+        <h2>Resultat för registreringsnummer: {{ registration_number }}</h2>
+        <h1>Bilmodell: {{ car_model }}</h1>
+        <p>Motoreffekt: {{ horsepower }}</p>
+        
+        <!-- Här kan du lägga till mer information eller design efter behov -->
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+            </div>
+            <div class="footer-info">
+                <h3>Kontakta oss</h3>
+                <p>Email: melihsak@hotmail.se</p>
+            </div>
+            <div class="footer-social">
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2023 Msn4
+        </div>
+    </footer>
+</body>
+</html>
